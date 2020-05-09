@@ -6,14 +6,19 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
-  },
+  
   {
     path: 'music-genres',
     loadChildren: () => import('./music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
+  },
+  {
+    path: '',
+    redirectTo: '/tabs/home',
+    pathMatch: 'full'
   },
 ];
 
