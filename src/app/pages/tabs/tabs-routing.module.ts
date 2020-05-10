@@ -10,17 +10,22 @@ const routes: Routes = [
     children: [
       {
         path: 'home',
-        loadChildren: '../home/home.module#HomePageModule'
+        loadChildren: () => import('../home/home.module').then( m => m.HomePageModule)
       },
       {
         path: 'music-genres',
-        loadChildren: '../music-genres/music-genres.module#MusicGenresPageModule'
+        loadChildren: () => import('../music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
+      },
+      {
+        path: '',
+        redirectTo: '/tabs/home',
+        pathMatch: 'full'
       }
     ]
   },
   {
     path:'',
-    redirectTo: '',
+    redirectTo: '/tabs/home',
     pathMatch: 'full'
   }
 ];

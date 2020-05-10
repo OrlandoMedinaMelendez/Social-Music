@@ -9,12 +9,6 @@ export class MusicGenresPage implements OnInit {
 
   private genres = [
     {
-      id: '1',
-      title:'K-pop',
-      imgURL: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg',
-      artits : ['BTS Twice Loona']
-    },
-    {
       id: '2',
       title:'Banda',
       imgURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png',
@@ -25,6 +19,12 @@ export class MusicGenresPage implements OnInit {
       title:'Electronica',
       imgURL: 'https://1000marcas.net/wp-content/uploads/2019/12/Avicii-Logo.png',
       artits : ['Avicci']
+    },
+    {
+      id: '1',
+      title:'K-pop',
+      imgURL: 'https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg',
+      artits : ['BTS Twice Loona']
     },
     {
       id: '4',
