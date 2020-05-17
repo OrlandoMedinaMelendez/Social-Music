@@ -14,8 +14,16 @@ const routes: Routes = [
   {
     path: 'music-genres',
     loadChildren: () => import('./music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
+  },  {
+    path: 'banda',
+    loadChildren: () => import('./banda/banda.module').then( m => m.BandaPageModule)
   },
-];
+  {
+    path: 'kpop',
+    loadChildren: () => import('./kpop/kpop.module').then( m => m.KpopPageModule)
+  },
+
+ ];
 
 @NgModule({
   imports: [
