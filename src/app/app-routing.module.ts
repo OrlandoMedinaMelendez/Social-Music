@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'kpop',
     loadChildren: () => import('./kpop/kpop.module').then( m => m.KpopPageModule)
   },
+  {
+    path: 'pop',
+    loadChildren: () => import('./pop/pop.module').then( m => m.PopPageModule)
+  },
+  {
+    path: 'rock',
+    loadChildren: () => import('./rock/rock.module').then( m => m.RockPageModule)
+  },
+  {
+    path: 'electronica',
+    loadChildren: () => import('./electronica/electronica.module').then( m => m.ElectronicaPageModule)
+  },
 
  ];
 

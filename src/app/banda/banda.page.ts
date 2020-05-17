@@ -16,17 +16,17 @@ export interface Track {
 export class BandaPage implements OnInit {
   playlist: Track[] = [
     {
-      name: ' Amiga Soledad',
+      name: ' Amiga Soledad - Duelo',
       path: 'assets/amigasoledad.mp3',
       img: 'assets/duelo.jpg'
     },
     {
-      name: ' De los besos que te di',
+      name: ' De los besos que te di - Christian Nodal',
       path: 'assets/delosbesosquetedi.mp3',
       img: 'assets/cn.jfif'
     },
     {
-      name: ' Desde hoy',
+      name: ' Desde hoy - Duelo',
       path: 'assets/desdehoy.mp3',
       img: 'assets/duelo1.jfif'
     },  
