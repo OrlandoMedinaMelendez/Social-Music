@@ -14,7 +14,11 @@ const routes: Routes = [
   {
     path: 'music-genres',
     loadChildren: () => import('./music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
+  },  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+
 ];
 
 @NgModule({
