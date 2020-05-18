@@ -17,14 +17,20 @@ export class HomePage {
     {
       nombre:'Jonas Brothers',
       img: ' assets/img/jonas.jpg ',
-      des:'Grammys',
-      fuente:'Los integrantes de la agrupación de música pop estadounidense Jonas Brothers, se dijeron tristes por tener que '
+      des:'Cancelan su recidencia en las Vegas',
+      fuente:'Los integrantes de la agrupación de música pop estadounidense Jonas Brothers, se dijeron tristes por tener que cancelar su residencia en Las Vegas, que comenzaría el próximo mes con nueve fechas, debido a la propagación del coronavirus.'
     },
     {
       nombre:'Dua lipa',
       img: 'assets/img/dualipa.jpg ',
       des:'Dua Lipa ha vuelto a cambiar de color de pelo y ahora lo lleva en un tono muy acorde con esta temporada',
-      fuente:'Desde que empezó la cuarentenaDua Lipa no ha parado de experimentar con su cabello. '
+      fuente:'Una de las celebridades que más ha cambiado de look durante esta cuarentena es sin duda Dua Lipa. Apenas días atrás mostraba que había escogido el naranja para cubrir su peculiar cabellera, pero parece haber cambiado rápidamente de opinión. '
+    },
+    {
+      nombre:'Jlo y Shakira',
+      img: 'assets/img/jlo-y-shakira.jpg ',
+      des:'Super bowl 2020',
+      fuente:'Un espectáculo de luces, grandes coreografías y el talento de ambas cantantes desataron la polémica en las redes sociales, pues mientras unos alababan lo visto en el escenario otros cargaron en contra por considerarlo obsceno y que cosifica a la mujer.'
     }
   ];
 
