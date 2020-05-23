@@ -4,17 +4,22 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
+  },
+  
+  {
+    path: 'music-genres',
+    loadChildren: () => import('./pages/music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
   },
   {
     path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
-    path: 'music-genres',
-    loadChildren: () => import('./music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
-  },
+    path: '',
+    redirectTo: '/tabs/tabs/home',
+    pathMatch: 'full'
+  }
 ];
 
 @NgModule({
