@@ -39,11 +39,16 @@ const routes: Routes = [
     loadChildren: () => import('./electronica/electronica.module').then( m => m.ElectronicaPageModule)
   },
 
- ];
+  {
     path: '',
     redirectTo: '/tabs/tabs/home',
     pathMatch: 'full'
   }
+  },  {
+    path: 'chat',
+    loadChildren: () => import('./chat/chat.module').then( m => m.ChatPageModule)
+  },
+
 ];
 
 @NgModule({
