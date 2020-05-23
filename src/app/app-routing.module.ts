@@ -16,6 +16,30 @@ const routes: Routes = [
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
   {
+    path: 'music-genres',
+    loadChildren: () => import('./music-genres/music-genres.module').then( m => m.MusicGenresPageModule)
+  },  {
+    path: 'banda',
+    loadChildren: () => import('./banda/banda.module').then( m => m.BandaPageModule)
+  },
+  {
+    path: 'kpop',
+    loadChildren: () => import('./kpop/kpop.module').then( m => m.KpopPageModule)
+  },
+  {
+    path: 'pop',
+    loadChildren: () => import('./pop/pop.module').then( m => m.PopPageModule)
+  },
+  {
+    path: 'rock',
+    loadChildren: () => import('./rock/rock.module').then( m => m.RockPageModule)
+  },
+  {
+    path: 'electronica',
+    loadChildren: () => import('./electronica/electronica.module').then( m => m.ElectronicaPageModule)
+  },
+
+ ];
     path: '',
     redirectTo: '/tabs/tabs/home',
     pathMatch: 'full'
