@@ -15,7 +15,7 @@ export class MusicGenresPage implements OnInit {
       title:'Banda',
       imgURL: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/1200px-Flag_of_Mexico.svg.png',
       artits : ['BandaMs Julion Alvarez'],
-      redirectTo: './genres/banda'
+      redirectTo: './banda'
     },
     {
       id: '3',

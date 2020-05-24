@@ -20,7 +20,27 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
-      }
+      },
+      {
+        path: 'banda',
+        loadChildren: () => import('../genres/banda/banda.module').then( m => m.BandaPageModule)
+      },
+      {
+        path: 'kpop',
+        loadChildren: () => import('../genres/kpop/kpop.module').then( m => m.KpopPageModule)
+      },
+      {
+        path: 'pop',
+        loadChildren: () => import('../genres/pop/pop.module').then( m => m.PopPageModule)
+      },
+      {
+        path: 'rock',
+        loadChildren: () => import('../genres/rock/rock.module').then( m => m.RockPageModule)
+      },
+      {
+        path: 'electronica',
+        loadChildren: () => import('../genres/electronica/electronica.module').then( m => m.ElectronicaPageModule)
+      },
     ]
   },
   {
