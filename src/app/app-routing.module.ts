@@ -3,6 +3,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: '/login',
+    pathMatch: 'full'
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
@@ -40,12 +45,20 @@ const routes: Routes = [
     loadChildren: () => import('./pages/genres/chat/chat.module').then( m => m.ChatPageModule)
   },
   {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+
+  
+];
+
+/*
+{
     path: '',
     redirectTo: '/tabs/tabs/home',
     pathMatch: 'full'
   },
-  
-];
+*/
 
 @NgModule({
   imports: [
