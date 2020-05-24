@@ -1,6 +1,6 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>Generos Musicales</ion-title>
+    <ion-title align>Generos Musicales</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -21,7 +21,7 @@
 
   <ion-list>
 
-    <ion-item *ngFor ="let genre of genres" [routerLink] = "['/home']">
+    <ion-item *ngFor ="let genre of genres" [routerLink]="genre.redirectTo">
 
       <ion-avatar slot="start">
         <ion-img [src]= "genre.imgURL"></ion-img>

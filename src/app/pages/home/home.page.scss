@@ -21,13 +21,13 @@
 
   margin: 0;
 }
-
+/*
 .form{
   height: 100%;
   background:black;
   --bullet-background:black; 
   --bullet-background-active:black;
-};
+};*/
 
 .page{  
   width: 96%; 
@@ -80,3 +80,7 @@
   text-decoration: none;
 }
 
+section{
+  margin-top: 10px;
+  margin-bottom: 2.5em;
+};
